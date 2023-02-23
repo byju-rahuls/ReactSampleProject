@@ -29,11 +29,14 @@ class StopWatch extends React.Component
                  second++;
                 if(minute>59)
                 {
+                    second=0;
                      minute=0;
                      hour++;
                 }
                 if( hour>59)
                 {
+                    second=0;
+                    minute=0;
                     hour=0;
                      day++;
                 }
